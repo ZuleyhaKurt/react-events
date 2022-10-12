@@ -19,9 +19,9 @@ const[count,setCount]=useState(0)
         <button onClick={increment}  className="btn btn-success">INC</button>
         <button onClick={()=>setCount(0)}  className="btn btn-dark">CLR</button>
        
-       
-          <button onClick={dec} className="btn btn-danger">DEC</button>
-          {/* <button onClick={()=> setCount(count-1)}  className="btn btn-danger">DEC</button> */}
+{/*        
+          <button onClick={dec} className="btn btn-danger">DEC</button> */}
+          <button onClick={()=> count>0 && setCount(count-1)}  className="btn btn-danger">DEC</button>
       </div>
     
   )
